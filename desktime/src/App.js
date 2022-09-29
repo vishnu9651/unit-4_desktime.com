@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 
 import AllRoutes from './Routes/AllRoutes';
 import Footer from './Components/Footer/Footer';
+import Home from './Routes/Home';
 
 function App() {
 
@@ -11,9 +12,10 @@ function App() {
 
   return (
     <div className="App">
-<Navbar />
-<AllRoutes />
-<Footer />
+{/* <Navbar /> */}
+{/* <AllRoutes /> */}
+{/* <Footer /> */}
+<Home  />
     </div>
   );
 }
