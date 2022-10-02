@@ -3,7 +3,7 @@ import { Box, Button, FormControl, FormLabel, Heading, Input, Text } from "@chak
 function Login(){
 
     return <div>
-    <Box>
+    <Box w="40%" marginLeft="350px" marginBottom="200px">
         <Heading>Log in to DeskTime</Heading>
     <FormControl isRequired>
     <FormLabel>Email</FormLabel>
@@ -12,9 +12,10 @@ function Login(){
     <Input placeholder='Enter password' />
     <Button bg="green">LOGIN</Button>
   </FormControl>
-  </Box>
   <Text>I forget my password</Text>
   Don't have an account yet? Sign up here !
+  </Box>
+  
     </div>
 }
 export default Login

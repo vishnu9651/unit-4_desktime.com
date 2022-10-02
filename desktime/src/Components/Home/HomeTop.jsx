@@ -1,11 +1,12 @@
 import { Box, Flex, Heading, Image, Input, Text } from "@chakra-ui/react"
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar,AiFillClockCircle } from "react-icons/ai";
+import {BsFillShieldFill,BsCalendarEventFill} from "react-icons/bs"
 function HomeTop(){
 
-    return(<div style={{backgroundImage:`url(https://desktime.com/assets/img/intro_background.png)`,backgroundRepeat:"no-repeat",border:"1px solid red",color:"black"}}>
-        HomeTop
+    return(<div style={{backgroundImage:`url(https://desktime.com/assets/img/intro_background.png)`,backgroundRepeat:"no-repeat",color:"black"}}>
+        
         <div style={{display:"flex",justifyContent:"space-between" }}>
-            <div style={{width:"50%",marginRight:"10%",border:"1px solid red",padding:"80px",textAlign:"start" }}>
+            <div style={{width:"50%",marginRight:"10%",padding:"80px",textAlign:"start" }}>
                 <Heading>The ultimate all-in-one automatic time tracker</Heading>
                 <br />
             
@@ -20,15 +21,14 @@ function HomeTop(){
             <Text>By signing up, you agree to our terms and privacy policy.</Text>
             </div>
             <div style={{marginRight:"30px"}} >
-                {/* <iframe
+                 <iframe
                   src="https://www.youtube.com/embed/sgmDvqlSMF4?playlist=sgmDvqlSMF4&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdesktime.com" 
          
                 frameborder="none" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen="" data-gtm-yt-inspected-12860828_60="true" id="281139538" 
                 data-gtm-yt-inspected-38="true" data-gtm-yt-inspected-43="true" width="450px"  height="450px">
 
-                </iframe> */}
-               
+                </iframe>                
                 
                 </div> 
         </div>
@@ -43,7 +43,7 @@ function HomeTop(){
 
 <div style={{margin:"20px",marginTop:"60px"}}>
     <Flex>
-    <div style={{padding:"20px",width:"60%",border:"1px solid tomato",textAlign:"left"}}>
+    <div style={{padding:"20px",width:"60%",textAlign:"left"}}>
         <div >
              <Heading>Use time tracking software to boost productivity by 30%</Heading>
              <br />
@@ -54,27 +54,38 @@ function HomeTop(){
             <Box>
 
                 
-                <Flex><Box margin="2px"><AiFillStar color="green"  size="30px"  /> </Box><Box><Heading size="md"> Skyrocket effectiveness</Heading>
+                <Flex><Box margin="2px">
+                    <AiFillStar color="green"  size="20px"  /> </Box><Box><Heading size="md"> Skyrocket effectiveness</Heading>
                     <Text w="80%">Know who's doing what and how it's going all the while eliminating distractions.</Text>
                 </Box>
                 </Flex>
                 <br />
-                <Box>
-                    
-                <Box margin="2px"><AiFillStar color="green"  size="30px"  /> </Box><Heading size="md">Automate team management</Heading>
+                
+                
+                    <Flex>
+                <AiFillClockCircle 
+                color="green"  size="40px"  />
+                <Box margin="5px"><Heading size="md">Automate team management</Heading>
                     <Text w="80%">Organize shifts, absences, and booking-related questions all in one place.</Text>
-                </Box>
+                    </Box>
+                    </Flex>
             </Box>
             
 <Box>
-<Box>
+
+<Flex>
+<BsFillShieldFill color="green"  size="40px"  /><Box margin="5px">
                     <Heading size="md">Skyrocket effectiveness</Heading>
                     <Text w="80%">Know who's doing what and how it's going all the while eliminating distractions.</Text>
                 </Box>
-                <Box>
+                </Flex>
+<br />
+                <Flex><BsCalendarEventFill color="green" margin="5px" size="40px"  /><Box margin="5px">
+                    
                     <Heading size="md">Automate team management</Heading>
                     <Text w="80%">Organize shifts, absences, and booking-related questions all in one place.</Text>
                 </Box>
+                </Flex>
 </Box>
             
         </Flex>

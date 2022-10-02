@@ -5,7 +5,7 @@ import { Box, Button, FormControl, FormLabel, Heading, Input, Text } from "@chak
 function Signup(){
 
     return <div>
-           <Box>
+           <Box w="40%" marginLeft="350px" marginBottom="200px">
         <Heading>Sign up for a FREE DeskTime Trial</Heading>
     <FormControl isRequired>
     <FormLabel>First and last name</FormLabel>
@@ -16,10 +16,11 @@ function Signup(){
     <Input placeholder='Create password' />
     <Button bg="green">SIGN UP FOR FREE</Button>
   </FormControl>
-  </Box>
   <Text>Try free for 14 days. No credit card required.
 
 By signing up, you agree to our terms and privacy policy.</Text>
+  </Box>
+
     </div>
 }
 export default Signup
